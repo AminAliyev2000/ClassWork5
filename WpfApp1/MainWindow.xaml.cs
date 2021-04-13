@@ -60,7 +60,9 @@ namespace WpfApp1
             //this.DataContext = this;
             InitializeComponent();
             //listview.ItemsSource = Books;
-            listbox.ItemsSource = Books;
+            //listbox.ItemsSource = Books;
         }
+
+       
     }
 }

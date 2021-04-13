@@ -11,14 +11,30 @@
             <ColumnDefinition Width="3*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Grid
-            Grid.Column="0"
-            Background="CadetBlue">
+        <Grid Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.5*"></RowDefinition>
                 <RowDefinition Height="8*"></RowDefinition>
             </Grid.RowDefinitions>
-            <TextBlock Background="White"></TextBlock>
+            <StackPanel Orientation="Horizontal" Grid.Row="0">
+ 
+            <TextBox Background="White" Foreground="Black" Text="Search..." FontSize="16" Width="480" Height="100" ></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <ListBox x:Name="listbox" Background="Green" Height="396">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                </Grid.RowDefinitions>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
         </Grid>
         <Grid
             Grid.Column="1"
